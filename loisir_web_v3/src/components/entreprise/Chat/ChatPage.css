@@ -1,0 +1,87 @@
+/* Conteneur principal du chat */
+.chat-page {
+  background-color: #f9f9f9; /* Couleur de fond douce */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+.alert {
+  padding: 12px 20px;
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+/* Messages */
+.messages {
+  background-color: #ffffff; /* Fond blanc pour les messages */
+  border: 1px solid #ddd; /* Bordure légère */
+  border-radius: 10px;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+/* Message envoyé par l'entreprise */
+.messages .bg-primary {
+  background-color: #26464d !important; /* Couleur principale */
+  color: #ffffff !important; /* Texte blanc */
+  font-weight: 500; /* Texte légèrement en gras */
+}
+
+/* Message envoyé par l'utilisateur */
+.messages .bg-light {
+  background-color: #8EB6AD !important; /* Couleur secondaire */
+  color: #ffffff !important; /* Texte blanc */
+  font-weight: 500;
+}
+
+/* Texte des messages */
+.messages p {
+  margin: 0;
+  font-size: 14px; /* Taille de texte claire */
+  line-height: 1.5;
+  color: #ffffff; /* Texte blanc */
+}
+
+/* Date des messages */
+.messages small {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #ffffff; /* Texte blanc pour la date */
+}
+
+/* Zone de saisie */
+.message-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #c0bebe;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.message-input button {
+  background-color: #D7A738; /* Couleur dorée */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-input button:hover {
+  background-color: #b58c2e; /* Couleur dorée plus foncée au survol */
+}

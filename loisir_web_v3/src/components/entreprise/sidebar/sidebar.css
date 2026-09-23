@@ -1,0 +1,232 @@
+/* Styles généraux pour le sidebar */
+.sidebar-wrapper {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: calc(100vh - 60px);
+  width: 250px;
+  background-color: #fff; /* Changement de couleur de fond ici */
+  z-index: 1020;
+  overflow: hidden;
+}
+
+/* Conteneur principal du menu */
+.sidebar-content {
+  height: 100%;
+  overflow-y: auto; /* Active le scrolling vertical */
+  padding-bottom: 60px; /* Ajoute un espace en bas pour éviter le masquage du contenu */
+}
+
+/* Styles pour le container du menu */
+.sidebar-menu-container {
+  padding: 15px 0;
+}
+
+/* Styles pour les liens du menu */
+.sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-menu li {
+    margin: 2px 0;
+    display: flex;    /* Important pour que <a> prenne toute la hauteur */
+    align-items: center;
+  }
+
+.sidebar-menu li link {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  color: #4a7c87; /* Couleur du texte correspondant au nouveau fond blanc */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li.active link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-menu li link i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+/* Styles pour les sous-menus */
+.submenu {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.submenu li link {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #4a7c87; /* Couleur par défaut pour les sous-menus */
+  font-size: 14px;
+}
+
+.submenu li a:hover {
+  background-color: #2e4c52; /* Couleur encore plus foncée au survol */
+  color: #fff; /* Couleur au survol */
+}
+
+/* État actif pour les éléments de menu */
+.submenu li.active > link{
+  background-color: #d7a738; /* Couleur d'arrière-plan pour l'élément actif */
+  color: white; /* Couleur du texte pour l'élément actif */
+  font-weight: bold; /* Texte en gras pour l'élément actif */
+  border-left: 5px solid #f4c542; /* Ajout d'une bordure gauche pour l'accent */
+}
+
+/* Appliquer la même couleur aux spans dans les éléments actifs */
+.sidebar-menu li.active > link.menu-text,
+.submenu li.active > link.menu-text {
+  color: #d7a738; /* Texte blanc pour les éléments actifs */
+}
+
+/* Rotation de la flèche */
+.rotate-180 {
+  transform: rotate(-180deg);
+  transition: transform 0.1s ease-in-out;
+}
+
+.bi-chevron-down {
+  transition: transform 0.1s ease-in-out;
+}
+
+.icon-with-space {
+  margin-right: 10px; /* Espace entre les icônes et le texte */
+}
+
+/* Styles pour le menu principal de l'entreprise */
+.sidebar-wrapper {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: calc(100vh - 60px);
+  width: 250px;
+  background-color: #fff; /* Changement de couleur de fond ici */
+  z-index: 1020;
+  overflow: hidden;
+}
+
+.sidebar-content {
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 60px;
+}
+
+.sidebar-menu-container {
+  padding: 15px 0;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #d7a738; /* Couleur légèrement plus foncée au survol */
+  color: #fff;
+}
+
+.sidebar-menu li.active > link{
+  background-color: #d7a738; /* Couleur jaune pour l'élément actif */
+  color: #fff;
+  font-weight: bold;
+  border-left: 5px solid #f4c542; /* Accent sur le côté gauche */
+}
+
+/* Icônes des éléments actifs */
+.sidebar-menu li.active > link i {
+  color: #f4c542 !important; /* Couleur jaune pour les icônes actives */
+}
+
+/* Icônes des éléments non actifs */
+.sidebar-menu li > linki {
+  color: #4a7c87; /* Couleur noire pour les icônes non actives */
+  transition: color 0.1s ease-in-out;
+}
+
+/* Sous-menu */
+.submenu {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.submenu li link{
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #d7e7e8;
+}
+
+/* Transition pour un effet fluide */
+.sidebar-menu li a,
+.submenu li link{
+  transition: all 0.1s ease-in-out;
+}
+
+.submenu li.active link{
+  background-color: #d7a738; /* Couleur jaune pour l'élément actif dans le sous-menu */
+  color: #fff;
+}
+
+/* Rotation de la flèche */
+.rotate-180 {
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Profil dans la barre latérale */
+.shop-profile {
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.shop-profile p {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Styles pour les éléments actifs */
+.active-link {
+  background-color: #4a7c87; /* Couleur de fond */
+}
+
+.active-link link{
+  color: white !important; /* Texte blanc pour les liens */
+}
+
+.active-link .menu-text {
+  color: white !important; /* Texte blanc pour les spans */
+}
+
+/* Styles généraux pour les icônes */
+.active-link i {
+  color: white !important; /* Icônes blanches */
+}
+
+/* Nouveaux styles pour le scroll */
+/* Amélioration de l'apparence du scrollbar */
+.sidebar-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,38 @@
+# Dépendances
+/vendor/
+/node_modules/
+loisirTest/node_modules/
+loisir_web_v3/node_modules/
+
+# Environnement
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+storage/logs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache / build
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+/bootstrap/cache/
+dist/
+build/
+
+# Sous-dépôts Git (pour éviter le warning "embedded git repository")
+loisir_web_v3/.git/
+
+# Credentials Google Cloud
+iahub-*.json
+*-credentials.json
+service-account*.json

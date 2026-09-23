@@ -1,0 +1,115 @@
+
+  .login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .logo {
+    width: 120px;
+    margin-bottom: 20px; margin: 0 auto 20px;
+  }
+  .login-logo {
+  display: block;
+  margin: 0 auto 18px auto;
+  height: 48px;
+  width: auto;
+}
+  .login-register-form-head h2 {
+    color: #4a7c87;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .single-input {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .single-input label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .single-input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s;
+  }
+  
+  .single-input input:focus {
+    border-color: #4a7c87;
+    outline: none;
+  }
+  
+  .button-1 {
+    width: 100%;
+    padding: 12px;
+    background: #4a7c87;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+  
+  .button-1:hover {
+    background: #3a5c67;
+  }
+  
+  .login-register-from-btom p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .login-register-from-btom a {
+    font-weight: bold;
+    color: #4a7c87;
+    text-decoration: none;
+  }
+  
+  .login-register-from-btom a:hover {
+    text-decoration: underline;
+  }
+  
+  .user-type-selector {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .checkbox label {
+    font-size: 14px;
+    color: #555;
+  }
+  .form-check-label {
+    font-weight: bold;
+    color: #4a7c87;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .form-check-input:checked + .form-check-label {
+    color: #d7a738;
+  }
+  
